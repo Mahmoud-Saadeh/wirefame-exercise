@@ -6,4 +6,4 @@ This website is a project to practice what we learned from Code Fellows lectures
 
 LICENSE IS MIT License.
 
-[Live URL](https://mahmoud-saadeh.github.io/wirefame-exercise/index.html)
+[Live URL](https://mahmoud-saadeh.github.io/wireframe-exercise/index.html)
