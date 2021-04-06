@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+header {
+  background-color: #333;
+  height: 90px;
+  position: relative;
+}
+header div {
+  float: left;
+  position: absolute;
+  left: 20px;
+}
+header div img {
+  margin: 10px 0;
+}
+header ul {
+  position: absolute;
+  right: 20px;
+}
+
+header ul li {
+  display: inline-block;
+  margin: 0 30px;
+  vertical-align: middle;
+  line-height: 90px;
+}
+header ul li a {
+  text-decoration: none;
+  color: rgb(180, 180, 180);
+  font-size: 20px;
+}
+main {
+  display: block;
+}
+main section:first-child div img {
+  display: block;
+
+  margin: 50px auto;
+}
+main section:nth-child(2) {
+  margin: 0 auto;
+
+  padding: 0 180px;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+main section:nth-child(2) div {
+  float: left;
+  /* width: 30%; */
+  padding: 14px;
+  margin-bottom: 50px;
+}
+
+/* Clear floats after image containers */
+main section:nth-child(2)::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+main section:nth-child(3) {
+  padding: 100px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 30px;
+  display: block;
+}
+main section:nth-child(3) div {
+  float: left;
+  width: 50%;
+}
+main section:nth-child(3)::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+main section:nth-child(3) div:nth-child(2) {
+  margin-top: 40px;
+}
+main section:nth-child(3) div:nth-child(2) h3 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+main section:nth-child(3) div:nth-child(2) button {
+  background-color: #000;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+main section:nth-child(3) div:nth-child(2) button:hover {
+  background-color: rgb(75, 75, 75);
+}
+main section:nth-child(3) div:nth-child(2) p {
+  height: 200px;
+  overflow: scroll;
+}
+footer div {
+  width: 100%;
+  height: 400px;
+  background: #333;
+}
